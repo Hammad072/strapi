@@ -34,7 +34,7 @@ module.exports = {
             }
 
             // set the bucket file url
-            debugger;
+            console.log(data);
             file.url = data.Location;
 
             resolve();
