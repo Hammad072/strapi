@@ -29,6 +29,7 @@ module.exports = {
             ...customParams,
           },
           (err, data) => {
+            console.log(data);
             if (err) {
               return reject(err);
             }
