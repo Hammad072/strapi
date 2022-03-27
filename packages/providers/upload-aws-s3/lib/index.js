@@ -35,11 +35,11 @@ module.exports = {
             }
 
             // set the bucket file url
-//             var oldUrl = data.Location;
-//             var url = new URL(oldUrl);
-//             url.hostname = 'fxstrapi-dev-bucket.foxtons-cloud.link';
-//             file.url = url.href;
-            file.url = data.Location;
+             var oldUrl = data.Location;
+             var url = new URL(oldUrl);
+             url.hostname = 'fxstrapi-dev-bucket.foxtons-cloud.link';
+             file.url = url.href;
+            //file.url = data.Location;
 
             resolve();
           }
