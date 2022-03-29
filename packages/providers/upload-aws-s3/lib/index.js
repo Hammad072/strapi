@@ -20,6 +20,7 @@ module.exports = {
       new Promise((resolve, reject) => {
         // upload file on S3 bucket
         const path = file.path ? `${file.path}/` : '';
+        path = 'https://fxstrapi-dev-bucket.foxtons-cloud.link/thumbnail_gtr_ba7f77725c.jfif';
         S3.upload(
           {
             Key: `${path}${file.hash}${file.ext}`,
@@ -39,7 +40,7 @@ module.exports = {
 //              var url = new URL(oldUrl);
 //              url.hostname = 'fxstrapi-dev-bucket.foxtons-cloud.link';
 //              file.url = url.href;
-            //file.url = data.Location;
+            file.url = data.Location;
 
             resolve();
           }
